@@ -33,8 +33,8 @@ body {
 
     background-image: linear-gradient(
         45deg,
-        hsl(183, 31%, 54%) 20%,
-        hsl(183, 31%, 74%),
+        hsl(183, 31%, 54%),
+        hsl(183, 31%, 74%) 60%,
         hsl(0, 0%, 100%)
     );
 }
@@ -49,7 +49,11 @@ body {
 }
 
 .calc__screen {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .screen__output {
@@ -59,12 +63,17 @@ body {
     text-align: right;
 
     padding: 0.5rem 1rem;
+
+    flex: 1;
 }
 
 .screen__input {
     text-align: right;
+    word-wrap: break-word;
 
     padding: 0.5rem 1rem;
+
+    flex: 1;
 }
 
 .calc__keys {
